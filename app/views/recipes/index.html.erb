@@ -37,9 +37,9 @@
     <% @recipes.each do |recipe| %>
       <tr>
         <td><a href="http://cookpad.com/recipe/<%= recipe.url %>" target="_blank"><%= recipe.title %></td>
-        <td><img src="<%= recipe.img %>"></td>
-        <td><%= recipe.description %></td>
-        <td><%= recipe.ingredient %></td>
+        <td><a href="http://cookpad.com/recipe/<%= recipe.url %>" target="_blank"><img src="<%= recipe.img %>"></td>
+        <td><a href="http://cookpad.com/recipe/<%= recipe.url %>" target="_blank"><%= recipe.description %></td>
+        <td><a href="http://cookpad.com/recipe/<%= recipe.url %>" target="_blank"><%= recipe.ingredient %></td>
       </tr>
     <% end %>
   </tbody>
