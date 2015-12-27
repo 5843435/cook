@@ -1,0 +1,9 @@
+ja:
+  activerecord:
+    models:
+      recipe: レシピ
+    attributes:
+      recipe:
+        title: タイトル
+        description: 説明
+        ingredient: 材料

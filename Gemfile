@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 
+gem 'less-rails'
+gem 'therubyracer'
+gem 'execjs'
+gem 'twitter-bootstrap-rails'
+gem 'sprockets-rails', '2.3.3'
+gem 'simple_form'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'

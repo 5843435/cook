@@ -1,0 +1,16 @@
+<%= simple_form_for @recipe, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :url %>
+  <%= error_span(@recipe[:url]) %>
+  <%= f.input :title %>
+  <%= error_span(@recipe[:title]) %>
+  <%= f.input :img %>
+  <%= error_span(@recipe[:img]) %>
+  <%= f.input :description %>
+  <%= error_span(@recipe[:description]) %>
+  <%= f.input :ingredient %>
+  <%= error_span(@recipe[:ingredient]) %>
+
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                recipes_path, :class => 'btn btn-default' %>
+<% end %>
