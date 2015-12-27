@@ -4,7 +4,10 @@ class RecipesController < ApplicationController
   # GET /recipes
   # GET /recipes.json
   def index
-    @recipes = Recipe.page(params[:page])
+  # @recipes = Recipe.page(params[:page])
+    @q = Recipe.ransack(params[:q])
+    @recipes = @q.result.page(params[:page]).per(5)
+
   end
 
   # GET /recipes/1
