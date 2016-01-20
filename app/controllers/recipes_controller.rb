@@ -6,7 +6,7 @@ class RecipesController < ApplicationController
   def index
   # @recipes = Recipe.page(params[:page])
     @q = Recipe.ransack(params[:q])
-    @recipes = @q.result.page(params[:page]).per(5)
+    @recipes = @q.result.page(params[:page]).per(10)
 
   end
 
