@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'google-analytics-rails'
 gem 'less-rails'
 gem 'therubyracer'
 gem 'execjs'
