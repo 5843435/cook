@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby "2.3.0" # for heroku
 
 gem 'google-analytics-rails'
 gem 'less-rails'
