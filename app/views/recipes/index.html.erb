@@ -31,6 +31,7 @@
       <th><%= model_class.human_attribute_name(:img) %></th>
       <th><%= model_class.human_attribute_name(:description) %></th>
       <th><%= model_class.human_attribute_name(:ingredient) %></th>
+      <th><%= sort_link(@q, model_class.human_attribute_name(:tsukurepo)) %></th>
     </tr>
   </thead>
   <tbody>
@@ -40,6 +41,7 @@
         <td><a href="http://cookpad.com/recipe/<%= recipe.url %>" target="_blank"><img src="<%= recipe.img %>"></td>
         <td><a href="http://cookpad.com/recipe/<%= recipe.url %>" target="_blank"><%= recipe.description %></td>
         <td><a href="http://cookpad.com/recipe/<%= recipe.url %>" target="_blank"><%= recipe.ingredient %></td>
+        <td><a href="http://cookpad.com/recipe/<%= recipe.url %>" target="_blank"><%= recipe.tsukurepo %></td>
       </tr>
     <% end %>
   </tbody>

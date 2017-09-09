@@ -13,12 +13,16 @@
 
 ActiveRecord::Schema.define(version: 20151227145217) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "recipes", force: :cascade do |t|
     t.integer  "url"
     t.string   "title"
     t.string   "img"
     t.string   "description"
     t.string   "ingredient"
+    t.integer  "tsukurepo"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
